@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classcraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Classcraft</h1>
+  </header>
+  <main>
+    <!-- Formulario para agregar nuevos estudiantes -->
+    <section id="add-student-section">
+      <input type="text" id="new-student-name" placeholder="Nombre del estudiante" />
+      <input type="file" id="new-student-image" accept="image/*" />
+      <button id="add-student-button">Agregar Estudiante</button>
+    </section>
+
+    <!-- Formulario de inicio de sesión -->
+    <section id="login-section">
+      <h2>Inicia Sesión</h2>
+      <input type="text" id="login-code" placeholder="Ingresa tu código de estudiante" />
+      <button id="login-button">Acceder</button>
+    </section>
+
+    <!-- Opciones para guardar/cargar clases -->
+    <section id="file-section">
+      <button id="save-class-button">Guardar Clase</button>
+      <input type="file" id="load-class-file" accept="application/json" />
+    </section>
+
+    <!-- Contenedor de estudiantes -->
+    <div id="students-container">
+      <!-- Las tarjetas de estudiantes se generan dinámicamente -->
+    </div>
+
+    <!-- Sección de puntos personalizados -->
+    <section id="custom-points-section">
+      <label for="custom-points">Puntos Personalizados:</label>
+      <input type="number" id="custom-points" value="1" />
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
